@@ -16,3 +16,7 @@ the function and run automatically when you commit through a GitHub action.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+The worst-case time complexity of the function is $\Theta(V^2 + VE)$, where $V$ is the number of nodesin the graph and $E$ is the number of edges. This is because the function iterates over all nodes in the graph and contributes to a $\Theta(V)$ complexity. It also performs a depth-first search from each node and visits all the nodes and edges in the graph. In the worst case this is $\Theta(V + E)$ complexity. The function checks if a node has been visited by iterating over the visitedNodes array which in the worst case needs to iterate over all nodes, adding another $\Theta(V)$ complexity. The overall time complexity becomes $\Theta(V^2 + VE)$.
+
+https://www.geeksforgeeks.org/detect-cycle-undirected-graph/
