@@ -24,3 +24,4 @@ function findCycle(graph, node, visitedNodes) {
     }
     return false;
 }
+module.exports = { hasCycle };
