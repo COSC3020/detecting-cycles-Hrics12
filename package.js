@@ -1,7 +1,7 @@
 {
-  "name": "my-project",
+  "name": "detecting-cycles",
   "version": "1.0.0",
-  "description": "",
+  "description": "A project to detect cycles in a graph",
   "main": "code.js",
   "scripts": {
     "test": "jest"
@@ -13,3 +13,4 @@
     "jest": "^27.0.6"
   }
 }
+
