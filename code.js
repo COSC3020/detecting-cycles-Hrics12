@@ -10,7 +10,7 @@ function hasCycle(graph) {
 
 function findCycle(graph, node, visitedNodes) {
     visitedNodes.push(node);
-    for (let neighbor in graph[node]) {
+    for (let neighbor of graph[node]) {
         if (!visitedNodes.includes(neighbor)) {
             let cycleFound = findCycle(graph, neighbor, visitedNodes);
             if (cycleFound) {
